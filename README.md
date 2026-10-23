@@ -84,10 +84,7 @@ https://geodev-one.vercel.app/
 ---
 
 <p align="center">
-  <img
-    src="https://raw.githubusercontent.com/georgerodrigues04/georgerodrigues04/output/github-snake.svg"
-    alt="Cobra branca percorrendo minhas contribuições do GitHub"
-  />
+  <img src="https://raw.githubusercontent.com/georgerodrigues04/georgerodrigues04/output/github-snake.svg" alt="Cobra branca no gráfico de contribuições" />
 </p>
 
 ###
