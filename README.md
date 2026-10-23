@@ -6,7 +6,7 @@ Desenvolvedor Full Stack
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Apaixonado+por+tecnologia;Desenvolvimento+web+e+backend;Construindo+solu%C3%A7%C3%B5es+com+c%C3%B3digo" alt="Texto animado de digitação" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=Apaixonado+por+tecnologia;Desenvolvimento+web+e+backend;Construindo+solu%C3%A7%C3%B5es+com+c%C3%B3digo" alt="Texto animado de digitação" />
   </a>
 </p>
 
