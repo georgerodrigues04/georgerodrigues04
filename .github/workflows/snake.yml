@@ -31,11 +31,13 @@ jobs:
 
           path = Path("dist/github-snake.svg")
           svg = path.read_text(encoding="utf-8")
+
           svg = svg.replace(
               "<svg ",
-              '<svg style="background-color:#0D1117" ',
+              '<svg style="background-color:#050608" ',
               1
           )
+
           path.write_text(svg, encoding="utf-8")
           PY
 
