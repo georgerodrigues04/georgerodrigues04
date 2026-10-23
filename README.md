@@ -82,6 +82,8 @@ https://geodev-one.vercel.app/
 
 ###
 
+---
+
 <p align="center">
   <img
     src="https://raw.githubusercontent.com/georgerodrigues04/georgerodrigues04/output/github-snake.svg"
@@ -89,8 +91,9 @@ https://geodev-one.vercel.app/
   />
 </p>
 
-###.
+###
 
+---
 <h3 align="center">
 Transformando código em soluções.
 </h3>
