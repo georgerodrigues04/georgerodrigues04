@@ -17,44 +17,16 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate white snake with green dots
+      - name: Generate snake with dark background
         uses: Platane/snk@v3
         with:
           github_user_name: georgerodrigues04
           outputs: |
-            /tmp/github-snake.svg?color_snake=%23FFFFFF&color_dots=%23051008,%2308170D,%230D2615,%2313371D,%231A4726
-
-      - name: Add dark background
-        run: |
-          mkdir -p publish
-
-          python - <<'PY'
-          from pathlib import Path
-          import re
-
-          source = Path("/tmp/github-snake.svg")
-          target = Path("publish/github-snake.svg")
-
-          svg = source.read_text(encoding="utf-8")
-          background = '<rect width="100%" height="100%" fill="#050608"/>'
-
-          svg, count = re.subn(
-              r'(<svg\b[^>]*>)',
-              lambda match: match.group(1) + background,
-              svg,
-              count=1
-          )
-
-          if count != 1:
-              raise RuntimeError("Não foi possível localizar a abertura do SVG.")
-
-          target.write_text(svg, encoding="utf-8")
-          print("Fundo escuro aplicado com sucesso.")
-          PY
+            dist/github-snake.gif?color_snake=%23FFFFFF&color_dots=%23051008,%2308170D,%230D2615,%2313371D,%231A4726&color_background=%23050608
 
       - name: Publish animation
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: publish
+          publish_dir: dist
           publish_branch: output
