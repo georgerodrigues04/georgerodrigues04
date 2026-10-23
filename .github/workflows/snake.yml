@@ -22,7 +22,7 @@ jobs:
         with:
           github_user_name: georgerodrigues04
           outputs: |
-            dist/github-snake.gif?color_snake=%23FFFFFF&color_dots=%23051008,%2308170D,%230D2615,%2313371D,%231A4726&color_background=%23050608
+            dist/github-snake.gif?color_snake=%23FFFFFF&color_dots=%230D2818,%230E6B32,%2312A84A,%2325D366,%2339FF14&color_background=%230D1117
 
       - name: Publish animation
         uses: peaceiris/actions-gh-pages@v4
