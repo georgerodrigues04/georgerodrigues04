@@ -40,9 +40,10 @@ Desenvolvedor Backend
 
 
 ### Back-end
-🟢 Node.js   •   ⚡ Bun   •   ☕ Java   •   🐍 Python
 
-
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=typescript,java,linux,github" alt="Minhas Techs" />
+</p>
 
 </div>
 
