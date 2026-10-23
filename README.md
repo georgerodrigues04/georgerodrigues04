@@ -82,3 +82,10 @@ https://geodev-one.vercel.app/
 <h3 align="center">
 Transformando código em soluções.
 </h3>
+
+### 
+
+<div data-importer="techs" align="left">
+</div>
+
+###
