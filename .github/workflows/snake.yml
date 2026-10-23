@@ -22,39 +22,39 @@ jobs:
         with:
           github_user_name: georgerodrigues04
           outputs: |
-            dist/github-snake.svg?color_snake=%23FFFFFF&color_dots=%23051008,%2308170D,%230D2615,%2313371D,%231A4726
+            /tmp/github-snake.svg?color_snake=%23FFFFFF&color_dots=%23051008,%2308170D,%230D2615,%2313371D,%231A4726
 
       - name: Add dark background
         run: |
+          mkdir -p publish
+
           python - <<'PY'
           from pathlib import Path
           import re
-          import os
 
-          path = Path("dist/github-snake.svg")
-          temp = Path("dist/github-snake.tmp.svg")
+          source = Path("/tmp/github-snake.svg")
+          target = Path("publish/github-snake.svg")
 
-          svg = path.read_text(encoding="utf-8")
-
+          svg = source.read_text(encoding="utf-8")
           background = '<rect width="100%" height="100%" fill="#050608"/>'
 
-          svg = re.sub(
+          svg, count = re.subn(
               r'(<svg\b[^>]*>)',
               lambda match: match.group(1) + background,
               svg,
               count=1
           )
 
-          if svg == path.read_text(encoding="utf-8"):
-              raise RuntimeError("Não foi possível inserir o fundo SVG.")
+          if count != 1:
+              raise RuntimeError("Não foi possível localizar a abertura do SVG.")
 
-          temp.write_text(svg, encoding="utf-8")
-          os.replace(temp, path)
+          target.write_text(svg, encoding="utf-8")
+          print("Fundo escuro aplicado com sucesso.")
           PY
 
       - name: Publish animation
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
+          publish_dir: publish
           publish_branch: output
