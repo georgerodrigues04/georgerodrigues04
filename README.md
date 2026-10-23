@@ -15,9 +15,9 @@ Desenvolvedor Backend
 ## Sobre Mim
 
 - 💻 Desenvolvedor em constante aprendizado
-- 🌱 Estudando Java, TypeScript, Node.js, Bun e Python
+- 🌱 Estudando Java, TypeScript
 - 🚀 Criando projetos para fortalecer meu portfólio
-- 🎯 Foco em Desenvolvimento Full Stack e Automação
+- 🎯 Foco em Desenvolvimento Backend e Automação
 
 ---
 
@@ -25,7 +25,7 @@ Desenvolvedor Backend
 
 <p align="center">
   <a href="https://geodev-one.vercel.app/" target="_blank">
-    <img src="https://img.shields.io/badge/🚀_Meu_Portfólio-000?style=for-the-badge&logo=vercel&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Portfólio-000?style=for-the-badge&logo=vercel&logoColor=white"/>
 <div align="center">
   
 ### 🔗 https://geodev-one.vercel.app/
