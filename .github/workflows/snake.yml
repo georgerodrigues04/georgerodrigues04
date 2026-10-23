@@ -17,34 +17,39 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate white snake with green squares
+      - name: Generate white snake with green dots
         uses: Platane/snk@v3
         with:
           github_user_name: georgerodrigues04
           outputs: |
-            dist/github-snake.svg?color_snake=%23FFFFFF&color_dots=%230B3D1B,%230E7A2F,%2310B83F,%2300D936,%2300FF41
+            dist/github-snake.svg?color_snake=%23FFFFFF&color_dots=%23051008,%2308170D,%230D2615,%2313371D,%231A4726
 
-      - name: Set dark background
+      - name: Add dark background
         run: |
-          chmod u+w dist/github-snake.svg
-
           python - <<'PY'
           from pathlib import Path
           import re
+          import os
 
           path = Path("dist/github-snake.svg")
+          temp = Path("dist/github-snake.tmp.svg")
+
           svg = path.read_text(encoding="utf-8")
 
           background = '<rect width="100%" height="100%" fill="#050608"/>'
 
           svg = re.sub(
               r'(<svg\b[^>]*>)',
-              r'\1' + background,
+              lambda match: match.group(1) + background,
               svg,
               count=1
           )
 
-          path.write_text(svg, encoding="utf-8")
+          if svg == path.read_text(encoding="utf-8"):
+              raise RuntimeError("Não foi possível inserir o fundo SVG.")
+
+          temp.write_text(svg, encoding="utf-8")
+          os.replace(temp, path)
           PY
 
       - name: Publish animation
