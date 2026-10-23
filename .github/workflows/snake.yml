@@ -15,18 +15,20 @@ permissions:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
-      - name: Generate snake with dark background
+      - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
           github_user_name: georgerodrigues04
           outputs: |
-            dist/github-snake.gif?color_snake=%23FFFFFF&color_dots=%230D2818,%230E6B32,%2312A84A,%2325D366,%2339FF14&color_background=%230D1117
+            dist/github-snake.svg?color_snake=white&color_dots=%230d1117,%230d4429,%230e6b3b,%2326a641,%2339d353
 
-      - name: Publish animation
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Publish Snake
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
-          publish_branch: output
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
