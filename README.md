@@ -1,7 +1,7 @@
 <h1 align="center">George Rodrigues Cordeiro</h1>
 
 <h3 align="center">
-Desenvolvedor Full Stack
+Desenvolvedor Backend
 </h3>
 
 <p align="center">
