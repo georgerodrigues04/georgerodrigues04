@@ -85,12 +85,7 @@ https://geodev-one.vercel.app/
 
 
 
-<p align="center">
-  <img
-    src="https://raw.githubusercontent.com/georgerodrigues04/georgerodrigues04/output/snake.svg"
-    alt="Cobra branca de contribuições em verde neon"
-  />
-</p>
+
 
 ###
 
