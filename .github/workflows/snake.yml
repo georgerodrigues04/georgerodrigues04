@@ -1,3 +1,4 @@
+
 name: Generate Snake
 
 on:
@@ -16,12 +17,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate white snake
+      - name: Generate white snake with green dots
         uses: Platane/snk@v3
         with:
           github_user_name: georgerodrigues04
           outputs: |
-  dist/github-snake.svg?color_snake=%23FFFFFF&color_dots=%230D1117,%230B3D1B,%230E7A2F,%2310B83F,%2300FF41
+            dist/github-snake.svg?color_snake=%23FFFFFF&color_dots=%230D1117,%230B3D1B,%230E7A2F,%2310B83F,%2300FF41
 
       - name: Publish animation
         uses: peaceiris/actions-gh-pages@v4
