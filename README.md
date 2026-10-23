@@ -52,7 +52,7 @@ Desenvolvedor Backend
 ## Skills 
 
 <p align="center">
-  <img https://skillicons.dev/icons?i=bun,nodejs,elysia,spring,postgres,mysql,docker,github" alt="Minhas Techs" />
+  <img src="https://skillicons.dev/icons?i=bun,nodejs,elysia,spring,postgres,mysql,docker,github" alt="Minhas Skill" />
 </p>
 
 
