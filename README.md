@@ -6,7 +6,7 @@ Desenvolvedor Backend
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=FFFFFF&center=true&vCenter=true&width=900&lines=Transformando+ideias+em+c%C3%B3digo;Construindo+solu%C3%A7%C3%B5es+com+tecnologia;Convertendo+problemas+em+solu%C3%A7%C3%B5es;Desenvolvendo+o+futuro%2C+linha+por+linha" alt="Texto animado de digitação" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=36&pause=1000&color=FFFFFF&center=true&vCenter=true&width=900&lines=Transformando+ideias+em+c%C3%B3digo;Construindo+solu%C3%A7%C3%B5es+com+tecnologia;Convertendo+problemas+em+solu%C3%A7%C3%B5es;Desenvolvendo+o+futuro%2C+linha+por+linha" alt="Texto animado de digitação" />
   </a>
 </p>
 
