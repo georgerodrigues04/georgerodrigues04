@@ -1,3 +1,4 @@
+
 name: Generate Snake
 
 on:
@@ -21,11 +22,12 @@ jobs:
         with:
           github_user_name: georgerodrigues04
           outputs: |
-            dist/github-snake.svg?color_snake=%23FFFFFF&color_dots=%23121212,%23333333,%23555555,%23777777,%23AAAAAA
+            dist/snake.svg?color_snake=%23FFFFFF&color_dots=%230D1117%230D2818%23004D26%2300A344%2300FF41
 
-      - name: Publish animation
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Publish snake
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: dist
-          publish_branch: output
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
