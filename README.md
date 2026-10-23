@@ -49,10 +49,10 @@ Desenvolvedor Backend
 
 ---
 
-## Skills
+## Skills 
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=bun,java,linux,github" alt="Minhas Techs" />
+  <img https://skillicons.dev/icons?i=bun,nodejs,elysia,spring,postgres,mysql,docker,github" alt="Minhas Techs" />
 </p>
 
 
