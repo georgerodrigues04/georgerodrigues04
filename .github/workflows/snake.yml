@@ -4,9 +4,7 @@ name: Generate Snake
 on:
   schedule:
     - cron: "0 0 * * *"
-
   workflow_dispatch:
-
   push:
     branches:
       - main
@@ -19,14 +17,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Generate white contribution snake
+      - name: Generate white snake
         uses: Platane/snk@v3
         with:
           github_user_name: georgerodrigues04
           outputs: |
-            dist/github-snake.svg?color_snake=%23FFFFFF&palette=github-dark
+            dist/github-snake.svg?color_snake=%23FFFFFF&color_dots=%23121212,%23333333,%23555555,%23777777,%23AAAAAA
 
-      - name: Publish snake animation
+      - name: Publish animation
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
