@@ -23,7 +23,7 @@ steps:
       outputs: |
         dist/snake.svg?color_snake=%23FFFFFF&color_dots=%230D1117,%230D2818,%23004D26,%2300A344,%2300FF41
   - name: Publish snake
-    uses: crazy-max/ghaction-github-pages@v3.1.0
+    uses: crazy-max/ghaction-github-pages@v4
     with:
       target_branch: output
       build_dir: dist
