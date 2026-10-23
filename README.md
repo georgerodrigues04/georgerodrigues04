@@ -42,7 +42,7 @@ Desenvolvedor Backend
 ### Back-end
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=typescript,java,linux,github" alt="Minhas Techs" />
+  <img src="https://skillicons.dev/icons?i=typescript,java,linux" alt="Minhas Techs" />
 </p>
 
 </div>
@@ -52,7 +52,7 @@ Desenvolvedor Backend
 ## Skills
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=typescript,java,linux,github" alt="Minhas Techs" />
+  <img src="https://skillicons.dev/icons?i=bun,java,linux,github" alt="Minhas Techs" />
 </p>
 
 
