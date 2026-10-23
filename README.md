@@ -36,8 +36,6 @@ Apaixonado por tecnologia, desenvolvimento web e construção de soluções.
 
 <div align="center">
 
-### Front-end
-⚛️ React   •   🔷 TypeScript   •   🌐 HTML5   •   🎨 CSS3
 
 ### Back-end
 🟢 Node.js   •   ⚡ Bun   •   ☕ Java   •   🐍 Python
@@ -51,7 +49,7 @@ Apaixonado por tecnologia, desenvolvimento web e construção de soluções.
 ## Skills
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=typescript,java,bun,nodejs,python,git,github,elysia,spring" alt="Minhas Techs" />
+  <img src="https://skillicons.dev/icons?i=typescript,java,linux,github" alt="Minhas Techs" />
 </p>
 
 
