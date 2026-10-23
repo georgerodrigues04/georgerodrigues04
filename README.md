@@ -84,9 +84,14 @@ https://geodev-one.vercel.app/
 ---
 
 
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/georgerodrigues04/georgerodrigues04/output/github-snake.gif" alt="GitHub contribution snake" />
+  <img
+    src="https://raw.githubusercontent.com/georgerodrigues04/georgerodrigues04/output/github-snake.svg"
+    alt="GitHub Snake Animation"
+  />
 </p>
+
 
 
 ###
