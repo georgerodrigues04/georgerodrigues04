@@ -21,8 +21,7 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: georgerodrigues04
-          outputs: |
-            dist/snake.svg?color_snake=%23FFFFFF&color_dots=%230D1117%230D2818%23004D26%2300A344%2300FF41
+          outputs: |dist/snake.svg?color_snake=%23FFFFFF&color_dots=%230D1117%230D2818%23004D26%2300A344%2300FF41
 
       - name: Publish snake
         uses: crazy-max/ghaction-github-pages@v3.1.0
